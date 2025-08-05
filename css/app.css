@@ -1,4 +1,42 @@
+:root {
+    --primary-color: #009688;
+    --font-color: #161c2db3;
+    --heading-color: #252422;
+    --bg-white: #fff;
+    --bg-light: rgba(130, 115, 252, .05); /** #8273fc0d */
+    --bg-grey: #f7f7f7;
+    --dark: #0f1113;
+    --font: "Hind Siliguri", sans-serif;
+    --font: "Nata Sans", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
-    font-family: "Hind Siliguri", sans-serif;
-    font-family: "Nata Sans", sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--bg-grey);
+    color: var(--font-color);
+    font-family: var(--font);
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+    color: var(--heading-color);
+}
+
+h1 { font-size: 5rem; }
+h2 { font-size: 4rem; }
+h3 { font-size: 3rem; }
+
+.container {
+    max-width: 130rem;
+    width: 94%;
+    margin: 0 auto;
 }

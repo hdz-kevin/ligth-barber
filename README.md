@@ -1,2 +1,1 @@
-# Ligth-Barber
-
+# Light-Barber

@@ -1,6 +1,7 @@
 :root {
     --primary-color: #009688;
     --font-color: #161c2db3;
+    --font-color: #0e131fb3;
     --heading-color: #252422;
     --bg-white: #fff;
     --bg-light: rgba(130, 115, 252, .05); /** #8273fc0d */
@@ -35,8 +36,48 @@ h1 { font-size: 5rem; }
 h2 { font-size: 4rem; }
 h3 { font-size: 3rem; }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .container {
     max-width: 130rem;
     width: 94%;
     margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: var(--bg-white);
+    padding: 2rem 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--font-color);
+}
+
+.navbar__logo span {
+    color: var(--primary-color);
+}
+
+.navbar__links {
+    display: flex;
+    gap: 2.2rem;
+}
+
+.navbar__link {
+    font-size: 1.8rem;
+    color: var(--font-color);
+    transition: color 0.3s ease;
+    font-weight: 500;
 }

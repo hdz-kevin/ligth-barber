@@ -4,7 +4,8 @@
     --font-color: #0e131fb3;
     --heading-color: #252422;
     --bg-white: #fff;
-    --bg-light: rgba(130, 115, 252, .05); /** #8273fc0d */
+    --bg-light: rgba(130, 115, 252, .05);
+    /** #8273fc0d */
     --bg-grey: #f7f7f7;
     --dark: #0f1113;
     --font: "Hind Siliguri", sans-serif;
@@ -16,7 +17,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -28,13 +31,24 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     color: var(--heading-color);
 }
 
-h1 { font-size: 6rem; }
-h2 { font-size: 4rem; }
-h3 { font-size: 3rem; }
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
 
 a {
     text-decoration: none;
@@ -55,7 +69,7 @@ img {
 /* Header */
 .header {
     background-color: var(--bg-white);
-    padding: 2rem 0;
+    padding: 2.2rem 0;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -81,7 +95,7 @@ img {
 }
 
 .navbar__link {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     color: var(--font-color);
     transition: color 0.3s ease;
     font-weight: 500;
@@ -90,9 +104,10 @@ img {
 
 /* Hero */
 .hero {
-    height: 70rem;
-    background-image: url('../img/hero-2.jpg');
+    height: 75rem;
+    background-image: url('../img/hero-3.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     position: relative;
 }
@@ -124,17 +139,18 @@ img {
 
 .hero__button {
     width: fit-content;
+    display: flex;
+    gap: .5rem;
     padding: 1.4rem 2.8rem;
-    background-color: var(--bg-white);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--bg-white);
     font-weight: 600;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
 
 .hero__button:hover {
-    background-color: var(--primary-color);
-    color: var(--bg-white);
+    background-color: #008174;
 }
 
 .hero__social {

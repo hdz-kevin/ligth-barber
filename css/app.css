@@ -90,7 +90,7 @@ img {
 
 /* Hero */
 .hero {
-    height: calc(100vh - 8rem); /* Adjust for header height */
+    height: 70rem;
     background-image: url('../img/hero-2.jpg');
     background-size: cover;
     background-position: center;
@@ -124,7 +124,7 @@ img {
 
 .hero__button {
     width: fit-content;
-    padding: 1.5rem 3rem;
+    padding: 1.4rem 2.8rem;
     background-color: var(--bg-white);
     color: var(--primary-color);
     font-weight: 600;
@@ -135,4 +135,15 @@ img {
 .hero__button:hover {
     background-color: var(--primary-color);
     color: var(--bg-white);
+}
+
+.hero__social {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.hero__social svg {
+    width: 3.8rem;
+    height: 3.8rem;
+    stroke-width: 1.5;
 }

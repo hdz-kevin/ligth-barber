@@ -95,7 +95,7 @@ img {
 }
 
 .navbar__link {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     color: var(--font-color);
     transition: color 0.3s ease;
     font-weight: 500;
@@ -104,7 +104,7 @@ img {
 
 /* Hero */
 .hero {
-    height: 75rem;
+    height: 80rem;
     background-image: url('../img/hero-3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -155,11 +155,31 @@ img {
 
 .hero__social {
     display: flex;
-    gap: 1.5rem;
+    align-items: center;
+    gap: 1.4rem;
+    margin-bottom: -.8rem;
 }
 
-.hero__social svg {
-    width: 3.8rem;
-    height: 3.8rem;
+.hero__social-icon {
+    transition: all 0.3s ease;
+}
+
+.hero__social-icon:hover {
+    transform: translateY(-0.5rem);
+}
+
+.hero__social-icon:first-child {
+    margin-right: .4rem;
+}
+
+.hero__social-icon svg {
+    width: 4rem;
+    height: 4rem;
     stroke-width: 1.5;
+    stroke: #e1e1e1;
+    transition: all 0.3s ease;
+}
+
+.hero__social-icon svg:hover {
+    stroke: var(--primary-color);
 }
